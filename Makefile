@@ -1,8 +1,3 @@
-#---------------------------------------------------------------------
-# Makefile for BSGS
-#
-# Author : Jean-Luc PONS
-
 ifdef gpu
 
 SRC = SECPK1/IntGroup.cpp main.cpp SECPK1/Random.cpp \
@@ -40,8 +35,8 @@ OBJET = $(addprefix $(OBJDIR)/, \
 endif
 
 CXX        = g++
-CUDA       = /usr/local/cuda-8.0
-CXXCUDA    = /usr/bin/g++-4.8
+CUDA       = /usr/local/cuda-12.0
+CXXCUDA    = /usr/bin/g++
 NVCC       = $(CUDA)/bin/nvcc
 
 ifdef gpu
